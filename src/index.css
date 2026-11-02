@@ -1,0 +1,111 @@
+﻿* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.navbar {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.summary { display: flex; gap: 12px; flex-wrap: wrap; }
+.summary-item {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.summary-item span { font-size: 20px; font-weight: bold; margin-right: 4px; }
+.summary-item.warning { background: #f59e0b; }
+.summary-item.danger { background: #dc2626; }
+
+.container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+
+.add-form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+.add-form h2 { margin-bottom: 12px; font-size: 18px; }
+.form-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.form-row input {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+.btn-add {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-add:hover { background: #15803d; }
+.error { color: #dc2626; margin-top: 10px; font-size: 14px; }
+
+.search-bar input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 18px;
+}
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category-tag {
+  align-self: flex-start;
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.price { font-weight: bold; color: #1e3a8a; }
+.status {
+  align-self: flex-start;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: white;
+}
+.in-stock { background: #16a34a; }
+.low-stock { background: #f59e0b; }
+.out-of-stock { background: #dc2626; }
+.btn-delete {
+  margin-top: 6px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-delete:hover { background: #fecaca; }
+.empty { text-align: center; color: #6b7280; padding: 40px; }
